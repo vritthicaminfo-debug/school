@@ -1,0 +1,459 @@
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #102a43;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #f4b400;
+    color: #102a43;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.logo span {
+    font-size: 12px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4b400;
+}
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #102a43;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f6fa;
+    color: #e09b00;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+       background-image:
+        linear-gradient(rgba(16, 42, 67, 0.25), rgba(16, 42, 67, 0.25)),
+        url("images/banner.jpg");
+    background-size: cover;
+    background-position: center 25%;
+    min-height: 520px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+    
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease both;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    animation: fadeIn 1s ease 0.3s both;
+}
+
+.hero .btn {
+    animation: fadeIn 1s ease 0.6s both;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #f4b400;
+    color: #102a43;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e09b00;
+    transform: translateY(-3px);
+}
+
+/* Common Section */
+.section {
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #102a43;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: #102a43;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+/* Programs */
+.programs {
+    background-color: #f2f6fa;
+}
+
+.program-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.program-card {
+    background-color: white;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+.program-card h3 {
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+/* Facilities */
+.facility-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.facility-card {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    color: #102a43;
+    margin: 15px 0 5px;
+}
+
+.facility-card p {
+    padding: 0 15px 20px;
+}
+
+/* Why Choose Us */
+.choose {
+    background-color: #f2f6fa;
+}
+
+.choose-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.choose-card {
+    width: 280px;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 4px solid #f4b400;
+}
+
+.choose-card h3 {
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.review {
+    background-color: #fff8df;
+    padding: 25px;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.review h4 {
+    margin-top: 15px;
+    color: #102a43;
+}
+
+/* Contact */
+.contact {
+    background-color: #f2f6fa;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact .btn {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .about {
+        gap: 20px;
+    }
+
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* About */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    /* Section headings */
+    .section-title {
+        font-size: 25px;
+    }
+
+    /* Cards */
+    .program-card,
+    .facility-card,
+    .choose-card {
+        width: 100%;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 40px 15px;
+    }
+
+}
